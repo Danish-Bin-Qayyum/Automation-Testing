@@ -14,7 +14,7 @@ test('get started link', async ({ page }) => {
     //await page.type('')
 
     //providing password  -css
-    await page.fill("//input[@id='loginpassword']",'danishqayyum123')
+    await page.fill("//input[@id='loginpassword']",'danishqayyum123')       
 
     //click on login button 
     await page.click('//button[@onclick="logIn()"]')
