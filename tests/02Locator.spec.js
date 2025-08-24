@@ -9,7 +9,7 @@ test('get started link', async ({ page }) => {
      await page.click('id=login2')
 
      //provide username  - css
-     await page.locator('//input[@id="loginusername"]').fill('Danish Qayyum')
+     await page.locator('//input[@id="loginusername"]').fill('Danish Qayyum')   
      //await page.fill('//input[@id="loginusername"]')
     //await page.type('')
 
@@ -25,5 +25,5 @@ test('get started link', async ({ page }) => {
     await expect(logoutlink).toBeVisible()
     await page.close()
 
-});
+});  
   
