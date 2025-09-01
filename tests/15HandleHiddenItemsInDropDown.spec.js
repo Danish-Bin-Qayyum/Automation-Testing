@@ -8,4 +8,4 @@ test('HomePageTest',async ({page})=>{
    
       await page.waitForTimeout(3020)
  
-})
+})  
