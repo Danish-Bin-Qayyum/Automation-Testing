@@ -19,7 +19,9 @@ test('get started link', async ({ page }) => {
     await page.fill("//input[@id='loginpassword']",'danishqayyum123')       
 
     //step 4 : click on login button 
-    await page.click('//button[@onclick="logIn()"]')
+    await page.cl
+    
+    ick('//button[@onclick="logIn()"]')
 
     //step 5 : verify logout link presence  -xpath
     const logoutlink = await page.locator("//a[@id='logout2']")

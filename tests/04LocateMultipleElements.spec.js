@@ -5,7 +5,7 @@ test('locateMultipleElemente',async({page})=>{
     //step 1 : Navigate the page by link
     await page.goto('https://www.demoblaze.com/index.html')
     //step 2 : return the  list of elements
-    const links = await page.$$('a')
+    const links = await page.locator('a')
     //step 3 : loop for print element context
     for(const link of links ){
 
