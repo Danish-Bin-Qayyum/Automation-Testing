@@ -19,7 +19,7 @@ test('has title', async ({ page }) => {
     //step 4 : page.getByPlaceholder() to locate an input by placeholder.
     await page.getByPlaceholder('Password').fill('admin123')
     //step 5 : click the element 
-    await page.getByRole('button',{type:'submit'}).click()
+    await page.getByRole('button',{type:'submit'}).click()    
    
    //await expect(await page.getByText('')).toBeVisible()
 
