@@ -1,8 +1,12 @@
 const {test,exept} =require('@playwright/test');
 
+// how to locate multiple elements of the page in playwright
 test('locateMultipleElemente',async({page})=>{
-
-    //step 1 : Navigate the page by link
+   //step 1 : Before Hooks (1.1) ""hooks" are specific functions or blocks of code 
+   //  that are designed to run automatically at the execution"
+   
+   //  Returns the main resource response. In case of multiple redirects,
+   //  the navigation will resolve with the first non-redirect response.
     await page.goto('https://www.demoblaze.com/index.html')
     //step 2 : return the  list of elements
     const links = await page.locator('a')

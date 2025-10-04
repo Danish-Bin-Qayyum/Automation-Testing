@@ -1,8 +1,12 @@
 const {test , expect} = require('@playwright/test')// importe here tow modules
 
+// how to handle check box in test
 test('HomePageTest',async ({page})=>{
-
-   // step 1 :
+   //step 1 : Before Hooks (1.1) ""hooks" are specific functions or blocks of code 
+   //  that are designed to run automatically at the execution"
+   
+   //  Returns the main resource response. In case of multiple redirects,
+   //  the navigation will resolve with the first non-redirect response.
    await page.goto('https://testautomationpractice.blogspot.com/');
 
    // single checkbox (we are handling the single checkbox here )
@@ -39,7 +43,8 @@ test('HomePageTest',async ({page})=>{
         }
     }
 
-   // step 1 :  Pause the execution before moving to the next step*/
+   // step 1 : 
+   // Pause the execution before moving to the next step*/
    await page.waitForTimeout(1000)
 
 })

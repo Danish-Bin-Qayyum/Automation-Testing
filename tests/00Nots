@@ -1,0 +1,25 @@
+ Actions in Playwright( which are perform on locator )
+
+
+| Method                            | Whatdoes                                                         
+
+| `locator.check()`                  | Checks a checkbox (if not already checked).                            
+| `locator.click()`                  | Clicks on the element.                                               
+| `locator.dblclick()`               | Double-clicks on the element.                                        
+| `locator.setChecked()`             | Explicitly sets checkbox to checked or unchecked based on a boolean. |
+| `locator.tap()`                    | Simulates a tap (used mostly in mobile emulation).                   
+| `locator.uncheck()`                | Unchecks a checkbox.                                                 
+| `locator.hover()`                  | Moves the mouse over the element (useful for tooltips, dropdowns).   |
+| `locator.dragTo()`                 | Drags one element to another.                                        
+| `locator.screenshot()`             | Takes a screenshot of the element.                                   
+| `locator.fill()`                   | Fills an input or textarea with text.                                
+| `locator.clear()`                  | Clears the input field.                                              
+| `locator.selectOption()`           | Selects an option in a `<select>` dropdown.                          
+| `locator.selectText()`             | Selects (highlights) the text inside an input or textarea.           
+| `locator.scrollIntoViewIfNeeded()` | Scrolls the element into view if it’s not already visible.           
+| `locator.blur()`                   | Removes focus from the element.                                      
+| `locator.dispatchEvent()`          | Dispatches a custom DOM event.                                       
+| `locator.focus()`                  | Focuses the element (like clicking into a textbox).                  
+| `locator.press()`                  | Simulates pressing a key on the element.                             
+| `locator.pressSequentially()`      | Presses a sequence of keys, one by one.                              
+| 'locator.setInputFiles()'        | Uploads files via`<inputtype="file">`.                             

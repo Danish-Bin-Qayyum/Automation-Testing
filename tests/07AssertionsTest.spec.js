@@ -1,39 +1,22 @@
-/*await expect(locator).toBeAttached()	Element is attached
-await expect(locator).toBeChecked()	Checkbox is checked
-await expect(locator).toBeDisabled()	Element is disabled
-await expect(locator).toBeEditable()	Element is editable
-await expect(locator).toBeEmpty()	Container is empty
-await expect(locator).toBeEnabled()	Element is enabled
-await expect(locator).toBeFocused()	Element is focused
-await expect(locator).toBeHidden()	Element is not visible
-await expect(locator).toBeInViewport()	Element intersects viewport
-await expect(locator).toBeVisible()	Element is visible
-await expect(locator).toContainText()	Element contains text
-await expect(locator).toContainClass()	Element has specified CSS classes
-await expect(locator).toHaveAccessibleDescription()	Element has a matching accessible description
-await expect(locator).toHaveAccessibleName()	Element has a matching accessible name
-await expect(locator).toHaveAttribute()	Element has a DOM attribute
-await expect(locator).toHaveClass()	Element has specified CSS class property
-await expect(locator).toHaveCount()	List has exact number of children
-await expect(locator).toHaveCSS()	Element has CSS property
-await expect(locator).toHaveId()	Element has an ID
-await expect(locator).toHaveJSProperty()	Element has a JavaScript property
-await expect(locator).toHaveRole()	Element has a specific ARIA role
-await expect(locator).toHaveScreenshot()	Element has a screenshot
-await expect(locator).toHaveText()	Element matches text
-await expect(locator).toHaveValue()	Input has a value
-await expect(locator).toHaveValues()	Select has options selected
-await expect(locator).toMatchAriaSnapshot()	Element matches the Aria snapshot
-await expect(page).toHaveScreenshot()	Page has a screenshot
-await expect(page).toHaveTitle()	Page has a title
-await expect(page).toHaveURL()	Page has a URL
-await expect(response).toBeOK()	Response has an OK status*/
 
 const{test ,expect}=require('@playwright/test')
 
-test('AssertionTest',async({page})=>{
+/* 
+ * what is assertion  methods
+ */
 
-    //open app url
+/*
+ * Playwright includes test assertions in the form of expect function.
+ * To make an assertion, call expect(value) and choose a matcher that reflects the expectation.
+ * There are many generic matchers like toEqual, toContain, toBeTruthy
+ * that can be used to assert any conditions.
+ */ 
+test('AssertionTest',async({page})=>{
+   //step 1 : Before Hooks (1.1) ""hooks" are specific functions or blocks of code 
+   //  that are designed to run automatically at the execution"
+   
+   //  Returns the main resource response. In case of multiple redirects,
+   //  the navigation will resolve with the first non-redirect response.
     await page.goto('https://demo.nopcommerce.com/register?returnUrl=%2F')
 
     //1) await expect(page).toHaveURL()	Page has a URL

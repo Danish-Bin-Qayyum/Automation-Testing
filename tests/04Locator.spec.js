@@ -1,9 +1,13 @@
 const {test , expect} = require('@playwright/test')// importe here two modules
 //import { text,expect } from '@playwright/test'
 
+//multiple approache of locating page elements
 test('get started link', async ({ page }) => {
-  
-    //step 1 : Navigate the page by link
+   //step 1 : Before Hooks (1.1) ""hooks" are specific functions or blocks of code 
+   //  that are designed to run automatically at the execution"
+   
+   //  Returns the main resource response. In case of multiple redirects,
+   //  the navigation will resolve with the first non-redirect response.
     await page.goto('https://www.demoblaze.com/index.html')
      
     //step 2 : click on login button  -property
@@ -19,9 +23,7 @@ test('get started link', async ({ page }) => {
     await page.fill("//input[@id='loginpassword']",'danishqayyum123')       
 
     //step 4 : click on login button 
-    await page.cl
-    
-    ick('//button[@onclick="logIn()"]')
+    await page.click('//button[@onclick="logIn()"]')
 
     //step 5 : verify logout link presence  -xpath
     const logoutlink = await page.locator("//a[@id='logout2']")

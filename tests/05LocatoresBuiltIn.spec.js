@@ -1,26 +1,15 @@
-/*
-* page.getByRole() to locate by explicit and implicit accessibility attributes.
-
-* page.getByText() to locate by text content.
-
-* page.getByLabel() to locate a form control by associated label's text.
-
-* page.getByPlaceholder() to locate an input by placeholder.
-
-* page.getByAltText() to locate an element, usually image, by its text alternative.
-
-* page.getByTitle() to locate an element by its title attribute.
-
-* page.getByTestId() to locate an element based on its data-testid attribute (other attributes can be configured).
-*/
 
 import { test, expect } from '@playwright/test';
 
+// how to use built in locators in you test
 test('has title', async ({ page }) => {
-
-    //step 1 : Navigate the page by link
+   //step 1 : Before Hooks (1.1) ""hooks" are specific functions or blocks of code 
+   //  that are designed to run automatically at the execution"
+   
+   //  Returns the main resource response. In case of multiple redirects,
+   //  the navigation will resolve with the first non-redirect response.
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-
+   
     //step 2 : page.getByAltText() to locate an element, usually image, by its text alternative.
     const logo = await page.getByAltText('OrangeHRM Logo')//compy the alt attribut text
     //console.log(logo);
@@ -31,7 +20,8 @@ test('has title', async ({ page }) => {
     await page.getByPlaceholder('Password').fill('admin123')
     //step 5 : click the element 
     await page.getByRole('button',{type:'submit'}).click()
-
+   
    //await expect(await page.getByText('')).toBeVisible()
 
 });
+``
