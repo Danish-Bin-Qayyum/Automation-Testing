@@ -225,3 +225,22 @@ request	   APIRequestContext     Isolated APIRequestContext instance for this te
 /**
  * @see https://playwright.dev/d                    ocs/test-configuration
  */
+
+
+/*
+
+// Here's a list of common options you can pass inside the object:
+
+| Option          | Type      | Description                                                                      |                                                                           |
+| --------------- | --------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `name`          | `string   | RegExp`                                                                          | The accessible name of the element (what a screen reader would announce). |
+| `exact`         | `boolean` | If `true`, matches `name` exactly. If `false` (default), allows partial matches. |                                                                           |
+| `checked`       | `boolean` | Filter only elements that are checked (used for checkboxes, radios).             |                                                                           |
+| `disabled`      | `boolean` | Match only disabled elements.                                                    |                                                                           |
+| `selected`      | `boolean` | Match only selected options (e.g., in dropdowns).                                |                                                                           |
+| `expanded`      | `boolean` | Match only elements that are expanded (e.g., dropdowns, accordions).             |                                                                           |
+| `includeHidden` | `boolean` | Include hidden elements in the search (default is `false`).                      |                                                                           |
+| `pressed`       | `boolean` | For toggle buttons — filters by `aria-pressed="true"` or `"false"`.              |                                                                           |
+| `level`         | `number`  | Only for heading roles (`<h1>`-`<h6>`) — filters by heading level.  
+
+*/
