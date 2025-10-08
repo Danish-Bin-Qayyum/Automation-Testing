@@ -23,14 +23,19 @@ test('Date Picker', async ({ page }) => {
   
   // step 3 start loop until the year and month is match
   while (true) {
+
     const currentYear = await page.locator("//span[@class='ui-datepicker-month']").textContent()
     const currentMonth = await page.locator("//span[@class='ui-datepicker-year']").textContent()
 
     if (currentYear == year && currentMonth == month ) {
+
        break;
-    }
-    await  page.locator("//a[@title='Next']").click()
-  }
+      
+      }
+
+  await  page.locator("//a[@title='Next']").click()
+
+}
 
   // step 4: A timeout to wait for
   await page.waitForTimeout(3000)
