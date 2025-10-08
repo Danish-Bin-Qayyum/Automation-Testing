@@ -126,9 +126,6 @@ request	   APIRequestContext     Isolated APIRequestContext instance for this te
  */
 
 
-
-
-
 /*
  * | Method                                         | Description                                               |
  * | ---------------------------------------------- | --------------------------------------------------------- |
@@ -243,4 +240,18 @@ request	   APIRequestContext     Isolated APIRequestContext instance for this te
 | `pressed`       | `boolean` | For toggle buttons — filters by `aria-pressed="true"` or `"false"`.              |                                                                           |
 | `level`         | `number`  | Only for heading roles (`<h1>`-`<h6>`) — filters by heading level.  
 
+*/
+
+/*
+🗂️ Common Events You Can Listen to With page.on()
+
+| Event Name    | Description                                         |
+| ------------- | --------------------------------------------------- |
+| `'dialog'`    | Triggered when an alert, confirm, or prompt appears |
+| `'load'`      | Fired when the page finishes loading                |
+| `'console'`   | When a `console.log()` happens on the page          |
+| `'request'`   | When a network request is made                      |
+| `'response'`  | When a network response is received                 |
+| `'pageerror'` | When a JavaScript error occurs on the page          |
+| `'close'`     | When the page is closed                             |
 */

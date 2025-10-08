@@ -21,8 +21,12 @@ test('mouse hover', async ({ page }) => {
   await page.goto("https://forum.opencart.com/viewtopic.php?t=228701")
    // locat and store the locator in variable
   const desktops = await page.locator("//ul[@class='nav navbar-nav']//a[normalize-space()='Features']")
-   // click the locator
-  await desktops.click()
+  const macbook = await page.locator("//ul[@class='nav navbar-nav']//a[normalize-space()='Features']")
+
+   // mouse hovering
+  await desktops.hover()
+  await macbook.hover()
+  
   //await page.waitForTimeout(1000)
 });
 

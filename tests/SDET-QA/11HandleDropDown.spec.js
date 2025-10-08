@@ -10,6 +10,7 @@ test('HomePageTest',async ({page})=>{
     await page.goto('https://testautomationpractice.blogspot.com/');
 
     // multiple ways of to select option from the dropdown
+    //
     //await page.locator("@country").selectOption({label : 'India'  }) label and visible text
     //await page.locator("//select[@id='country']").selectOption('India')
     //await page.locator("//select[@id='country']").selectOption({value :'uk'})
